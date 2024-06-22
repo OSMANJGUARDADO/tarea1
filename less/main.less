@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-size: 1rem;
+
+    main {
+        padding: 1rem;
+
+        #contactame {
+            padding: 1rem;
+            text-align: center;
+
+            form {
+                margin: 0rem auto;
+                box-shadow: 3px 3px 5px @black;
+                padding: 1rem;
+                max-width: 920px;
+                text-align: initial;
+            }
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            input,
+            textarea {
+                display: block;
+                min-width: 280px;
+                font-size: 1rem;
+                padding: 0.25rem 0.5rem;
+                border: none;
+                border-bottom: 1px solid @black;
+                margin-top: 0.25rem;
+            }
+        }
+        table {
+            tr {
+                border-bottom: 1px solid @black;
+            }
+
+            td,
+            th {
+                padding: 0.25rem 0.5rem;
+            }
+
+            tr:nth-child(2n) {
+                background-color: @gray;
+            }
+
+            thead,
+            tfoot {
+                background-color: @black;
+                color: @white;
+            }
+        }
+    }
+
+    footer {
+        background-color: @verdementa;
+        color: @white;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem;
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: @white;
+            text-decoration: none;
+
+        }
+    }
+}
